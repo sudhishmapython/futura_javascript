@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FAACTORIAL</title>
+</head>
+<body>
+	<script>
+	const num=parseInt(prompt('Enter a number:'))
+	if(num<0)
+	{
+		alert('Factorial is negative number')
+    }
+    else if(num==0)
+    {
+    	alert('Factorial of num is 1')
+    }
+    else
+    {
+    	let fact=1;
+    	for(i=1;i<=num;i++)
+        {
+    		fact=fact*i;
+        }
+        document.write("the fact is", fact)
+    }
+</script>
+</body>
+</html>
