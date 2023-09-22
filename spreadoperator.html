@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     
@@ -6,12 +6,13 @@
 </head>
 <body>
     <script>
+    
 
 // 1
-//const arrValue = ['My', 'name', 'is', 'Jack'];
-
+// const arrValue = ['My', 'name', 'is', 'Jack'];
+// const b=[...arrValue]
 // console.log(arrValue);   // ["My", "name", "is", "Jack"]
-//console.log(...arrValue); // My name is Jack
+// console.log(...arrValue); // My name is Jack
 
 //ie, console.log(...arrValue) is equivalent to: console.log('My', 'name', 'is', 'Jack');
 
@@ -19,55 +20,60 @@
 //2
 //Copy Array Using Spread Operator
 
-    // const arr1 = ['one', 'two'];
-// const arr2 = [...arr1, 'three', 'four', 'five'];
+    const arr1 = ['one', 'two'];
+    const arr9=[...arr1]
 
-// console.log(arr2); 
+
+const arr2 = [...arr1, 'three', 'four', 'five'];
+
+ document.write(arr2); 
+// arr9=arr1
+// arr1.push(5)
 
 //3.1
 //Clone Array Using Spread Operator
 
-// let arr4= [ 1, 2, 3];
-// let arr5 = arr4;
+let arr4= [ 1, 2, 3];
+let arr5 = arr4;
 
 // console.log(arr4); // [1, 2, 3]
 // console.log(arr5); // [1, 2, 3]
 
-// append an item to the array
-// arr4.push(4);
+//append an item to the array
+ arr4.push(4);
 
 // console.log(arr4); // [1, 2, 3, 4]
 // console.log(arr5); // [1, 2, 3, 4]
 
 // 3.2
 
-// let arr6 = [ 1, 2, 3];
+  let arr6 = [ 1, 2, 3];
 
-// copy using spread syntax
-//  let arr7 = [...arr6];
+//copy using spread syntax 
+  let arr7 = [...arr6];
 
 //  console.log(arr6); // [1, 2, 3]
-//  console.log(arr7); // [1, 2, 3]
+  // console.log(arr7); // [1, 2, 3]
 
-// append an item to the array
-//  arr6.push(4);
+//append an item to the array
+   arr6.push(4);
 
 //  console.log(arr6); // [1, 2, 3, 4]
-//  console.log(arr7); // [1, 2, 3]
+//   console.log(arr7); // [1, 2, 3]
 
-</script> 
+// </script>  -->
  <!-- </body> -->
  <!-- </html> -->
 
-<!-- <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     
     <title>Document</title>
 </head>
-<body> -->
-    <!-- <script>
-// 1. Spread Operator with Object
+<body> 
+    <script>
+//  1. Spread Operator with Object
 
 const obj1 = { x : 1, y : 2 };
 const obj2 = { z : 3 };
@@ -75,11 +81,11 @@ const obj2 = { z : 3 };
 // add members obj1 and obj2  to obj3
 const obj3 = {...obj1, ...obj2};
 
-console.log(obj3); // {x: 1, y: 2, z: 3}
+document.write(obj3); // {x: 1, y: 2, z: 3}
 
 
-</script> -->
-<!-- <script>
+</script> 
+ <script>
     const myVehicle = {
       brand: 'Ford',
       model: 'Mustang',
@@ -92,13 +98,14 @@ console.log(obj3); // {x: 1, y: 2, z: 3}
       color: 'yellow'
     }
     
-    const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
     
-    //Check the result object in the console:
+    const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle,price:100000}
+    
+    
    console.log(myUpdatedVehicle);
     </script>
     
-    <p>Press F12 and see the result object in the console view.</p>
-     -->
+    
+     
 </body>
-</html>
+</html> 

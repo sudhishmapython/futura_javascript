@@ -7,7 +7,7 @@
 <script>  
 class Student  
   {  
-    constructor()  
+    constructor(name,marks)  
     {  
        var name;  
        var marks;  
@@ -19,6 +19,7 @@ class Student
       setName(name)  
       {  
         this.name=name;  
+      
       }  
         
       getMarks()  
@@ -31,10 +32,46 @@ class Student
     }  
   
     }  
-    var stud=new Student("John",89);  
+    var stud=new Student();  
      stud.setName("John");  
      stud.setMarks(80);  
      document.write(stud.getName()+" "+stud.getMarks());  
 </script>
 </body>
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>ENCAPSULATION</title>
+</head>
+<body>
+<script>  
+class Student  
+  {  
+    constructor()  
+    {  
+       var name;  
+       var marks;  
+    }  
+        getName()  
+        {  
+          return this.name;  
+          return this.marks;  
+        }  
+      setName(name,marks)  
+      {  
+        this.name=name;  
+        this.marks=marks;  
+      }  
+     
+  
+    }  
+    var stud=new Student();  
+     stud.setName("John",50);  
+    
+     document.write(stud.getName());  
+</script>
+</body>
+</html> -->

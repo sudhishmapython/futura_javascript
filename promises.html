@@ -9,7 +9,7 @@
 var promise = new Promise(function(resolve, reject) { 
   const x = "a"; 
   const y = "a";
-  if(x === y) { 
+  if(x == y) { 
     resolve(); 
   } else { 
     reject(); 
@@ -18,12 +18,14 @@ var promise = new Promise(function(resolve, reject) {
     
 promise. 
     then(function () { 
-        console.log('Success'); 
+        document.write('Success'); 
     }). 
     catch(function () { 
-        console.log('Some error has occurred'); 
+        document.write('Some error has occurred'); 
     });
 
-    </script>
+    </script> 
+
+  
 </body>
 </html>

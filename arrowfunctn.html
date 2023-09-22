@@ -7,15 +7,18 @@
 <body>
 
 
-    <p id="demo1"></p>
+ <p id="demo1"></p>
 
-    <script>  
-    myFunction1(4,5);
+   <script>  
+
+   
+    
     function myFunction1(a, b)
     {
         document.getElementById("demo1").innerHTML =a*b;
     }  
-    </script>
+    myFunction1(4,5);
+    </script>  
 
 
 
@@ -24,16 +27,93 @@
 <p id="demo"></p>
 
 <script>
-let myFunction = (a, b) => a * b;
+let myFunction = (a,b) =>{
+ let f= a * b
+ document.write(f)
+}; 
 document.getElementById("demo").innerHTML = myFunction(4, 5);
 
 
-// const hello=()=>1;
+
+
+</script> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  <script>
+let sum = (a, b) =>{return a+b;}
+
+// let result1 = sum(5,7);
+ document.write(sum(1, 2)); 
+
+ </script> -->
+
+
+
+
+
+
+<!-- task1 -->
+
+<!-- <body onload="fun()"> -->
+<!-- <script>
+	let fun=()=>alert("welcom")
+</script> -->
+<!-- or -->
+
+<!-- <script>
+ let num=prompt("enter a number");
+const checkOddOrEven = num => {
+    if (num % 2 === 0) {
+      return 'Even';
+    } else {
+      return 'Odd';
+    }
+  };
+  
+  document.write(checkOddOrEven()); 
+ 
 </script>
+ -->
+
+
+
+ <!-- task2 -->
+
+
+<!-- <script>
+
+
+let age = prompt("What is your age?");
+
+let eligible = (age < 18) ? () => alert('minor!') :  () => alert("major!");
+
+eligible();
+</script>  -->
+
+<!-- Create an arrow function that finds the length of a string.
+
+
+const stringLength = (str) => str.length;
+console.log(stringLength("Hello, world!")); // Output: 13
 
 
 
 
+-->
 
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!-- Callback for Sorting:
+
+Write a function called sortArray that takes an array of objects and a callback function. The callback function should define the sorting criteria. Use the callback to sort the array and return the sorted result. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+
+
+
+function sortArray(arr, callback) {
+  // Use the callback to sort the array
+  const sortedArray = arr.sort(callback);
+  return sortedArray;
+}
+
+// Usage
+const people = [
+  { name: 'Alice', age: 30 },
+  { name: 'Bob', age: 25 },
+  { name: 'Eve', age: 35 }
+];
+
+const sortByAge = (a, b) => a.age - b.age;
+const sortedPeople = sortArray(people, sortByAge);
+document.getElementById("demo").innerHTML=sortedPeople;
+    </script>
+</body>
+</html>

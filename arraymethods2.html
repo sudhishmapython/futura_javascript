@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="demo"></p>
+<script>
+var emp=["Sonoo","Vimal","Ratan","Anagha","Appu"];
+
+
+  //  document.write(emp.slice(3,6)+"<br>")
+  //   document.write(emp)
+
+  //  document.getElementById("demo").innerHTML = emp.reverse();
+  //  document.getElementById("demo").innerHTML = emp.sort();
+
+const ages = [32, 33, 16, 40,10,5];
+document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+
+function checkAdult(age) {
+  return age >= 18;
+}
+
+</script>
+ 
+
+
+</body>
+</html> 

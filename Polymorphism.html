@@ -1,55 +1,97 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<title>POLYMORPHISM</title>
 </head>
 <body>
-	<!-- <script>  
-class A  
-  {  
-     display()  
-    {  
-      document.write("A is invoked");  
-    }  
-  }  
-class B extends A  
-  {  
-  }  
-var c=new B();  
-c.display();  
-</script>   -->
+	<script>  
+ class A {
+  constructor(x,y){
+    
+  }
+        area(x, y) {
+          console.log(x * y);
 
-
-
+        }
+    }
+    class B extends A {
+        area(a, b) {
+            super.area(a, b);
+            console.log('Class B')
+        }
+    }
+    var ob = new B();
+    ob.area(2,5);
+</script>  
 
 </body>
-</html>
-<!DOCTYPE html>
+</html> -->
+
+<!-- or -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>POLYMORPHISM</title>
+</head>
+<body>
+	<script>  
+ class A {
+  constructor(x,y){
+    this.x=x;
+    this.y=y;
+    
+  }
+        area() {
+               
+        let sum=this.x * this.y;
+          document.write(`sum is ${sum} <br>`)
+
+        }
+    }
+    class B extends A {
+        area() {
+            super.area();
+            document.write("second data")
+        }
+    }
+    var ob = new B(2,5);
+    ob.area();
+</script>  
+</body>
+</html> -->
+
+
+
+ <!DOCTYPE html>
 <html>
 <body>
  
 <script>
-class Welcome
+class A
   {
  	show()
 	{
-  	document.write("Welcome class method.");
+  	document.write("FIRST METHOD"+"<br>");
 	}
   }
-class Bye extends Welcome
+class B extends A
   {
-    
-   show()
+   
+  show()
 	{
-  	document.write("Bye class method.");
+        super.show();
+  	document.write("SECOND METHOD ");
 	}
-  }
-var welcome=new Welcome();
-welcome.show();
+  } 
+  //    var a=new A();
+  // a.show(); 
  
-var bye=new Bye();
-bye.show();
+ var b=new B();
+b.show();
 </script>
  
+
+
 </body>
-</html>
+</html> 

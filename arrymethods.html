@@ -1,0 +1,59 @@
+<!-- 1. tostring()   -->
+
+ <!-- <p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+</script>   -->
+  
+
+ <!-- 2. join() -->
+
+<!-- <p id="demo"></p> 
+
+ <script>
+ const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" . ");
+</script> -->
+
+<!-- 3. pop()  -->
+
+      <!-- <p id="demo1"></p>
+    <p id="demo2"></p>
+
+        <script>
+         const fruits = ["Banana", "Orange", "Apple", "Mango"];
+         document.getElementById("demo1").innerHTML = fruits;
+                // fruits.pop();
+                  //  delete fruits[1];
+                // fruits.splice(1,2);
+          //  document.getElementById("demo2").innerHTML = fruits;
+        </script>  -->
+        
+
+ <!-- 4. push()  -->
+
+ <!-- <p id="demo1"></p>
+<p id="demo2"></p> -
+
+  <script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.push("Kiwi");
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+  -->
+
+  <p id="demo1"></p>
+<p id="demo2"></p> -
+
+  <script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+ fruits.splice(1,0,"kiwi");
+ 
+// --- 2-position,0-howmany elemnts deleted after 2nd position
+document.getElementById("demo2").innerHTML = fruits;
+</script> 
+  
