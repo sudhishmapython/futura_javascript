@@ -4,27 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
+    <h1>form validation</h1>
+    
+        <form method="post" action="demo.html"  onsubmit="return myfunction()">
+            <label>name</label>
+            <input type="text" id="name" name="name" onkeyup="clearmsg('idsapn')"><br>
+            <span style="color: red;" id="idspan"></span>
+            &nbsp; &nbsp;&nbsp;<br>
+            <label>password</label>
+            <input type="password" id="pass" name="password" onkeyup="clearmsg('passpan')"><br>
+            <span id="passpan" style="color: red;" ></span>
+            &nbsp;&nbsp;&nbsp;<br>
+            <input type="submit" value="submit">
+        </form>
+
+
    <script>
-    
-    const myVehicle = {
-      brand: 'Ford',
-      model: 'Mustang',
-      color: 'red'
+
+    function myfunction(){
+    var name=document.getElementById("name").value
+    var pass=document.getElementById("pass").value
+    document.write(name)
+    if(name==null || name==""){
+        document.getElementById("idspan").innerHTML="please enter name";
+        return false;
+    }else if(password.length<6){
+         document.getElementById("passpan").innerHTML="please enetr password";
+         return false;
     }
-    
-    const updateMyVehicle = {
-      type: 'car',
-      year: 2021, 
-      color: 'yellow'
-    }
-    
-    
-    const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
-    
-    
-   console.log(myUpdatedVehicle);
-    </script> 
+}
+function clearmsg(sp){
+    document.getElementById(sp).innerHTML="";
+}
+
+   </script>
 </body>
 </html>

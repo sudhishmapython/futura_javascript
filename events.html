@@ -5,9 +5,12 @@
 	<title>onload event</title> 
 </head>  
 <body onload = "fun()">
+
+
+
 	<script>  
    function fun() {  
-      alert("Hello World!");  
+      document.write("onload event")
    }  
 </script>   
 <h1> JavaScript onload event </h1>  
@@ -23,12 +26,17 @@
 <head>
     <title>Document</title>
 </head>
-<body> -->
-    <!-- onclick -->
-    <!-- <script>
-	   let fun=()=>alert("welcome")
+<body> 
+  <button onclick = "fun()">Onclick</button>   
+
+     <script>
+	  
+    function fun(){
+      alert("welcome")
+    }
     </script>
-    <button onclick = "fun()">Onclick</button>   
+
+   
        
     </body>
 </html> -->
@@ -43,9 +51,9 @@
 <html>
 <body>
 
-<p ondblclick="fun()">Double-click this paragraph</p> -->
-<!-- <button ondblclick="fun()">click</button> -->
-<!-- <script>
+<p ondblclick="fun()">Double-click this paragraph</p> 
+ <button ondblclick="fun()">click</button> 
+ <script>
  let fun=()=>alert("welcome")
 </script>
 
@@ -75,45 +83,9 @@ function myFunction() {
 
 
 
-
-
-<!-- onmouseout -->
-
-<!-- <!DOCTYPE html>
-<html>
-<style>
-div {
-  width: 150px;
-  height:100px;
-  border: 1px solid black;
-  margin: 10px;
-  padding: 5px;
-  text-align: center;
-  background-color: lightgray;
-}
-</style>
-
-<body>
-
-<div onmouseout="myOutFunction()">
-  <p>onmouseout</p>
-  <p id="demo3">hello</p>
-</div>
-
-<script>
-let y = 0;
-
-function myOutFunction() {
-  document.getElementById("demo3").innerHTML = y+=1;
-}
-</script>
-
-</body>
-</html> -->
-
 <!-- onchange -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 
@@ -137,7 +109,52 @@ function myFunction() {
 </script>
 
 </body>
-</html>
+</html> -->
+
+
+
+
+
+
+<!-- onmouseover and onmouseout-->
+
+<!-- <!DOCTYPE html>
+<html>
+<style>
+div {
+  width: 150px;
+  height:100px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  background-color: lightgray;
+}
+</style>
+
+<body>
+
+<div onmouseover="myoverFunction()" onmouseout="myOutFunction()">
+  <p>futura</p>
+  <p id="demo3">hello</p>
+</div>
+
+<script>
+let y = 0;
+
+function myoverFunction() {
+  document.getElementById("demo3").innerHTML = "welcome"
+}
+
+function myOutFunction() {
+  document.getElementById("demo3").innerHTML = "bye";
+}
+</script>
+
+</body>
+</html> -->
+
+
 
 
 

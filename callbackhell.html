@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    function step1(callback) {
+        setTimeout(function () {
+            console.log("Step 1 completed");
+            callback();
+        }, 1000);
+    }
+    
+    function step2(callback) {
+        setTimeout(function () {
+            console.log("Step 2 completed");
+            callback();
+        }, 1000);
+    }
+    
+    function step3(callback) {
+        setTimeout(function () {
+            console.log("Step 3 completed");
+            callback();
+        }, 1000);
+    }
+    
+    function start() {
+        console.log("Starting...");
+        step1(function () {
+            step2(function () {
+                step3(function () {
+                    document.getElementById("demo").innerHTML=("All steps completed");
+                });
+            });
+        });
+    }
+    
+    start();
+</script>
+</body>
+</html>

@@ -7,31 +7,14 @@
 <body>
 
 
- <p id="demo1"></p>
-
-   <script>  
-
-   
-    
-    function myFunction1(a, b)
-    {
-        document.getElementById("demo1").innerHTML =a*b;
-    }  
-    myFunction1(4,5);
-    </script>  
-
-
-
 
     
 <p id="demo"></p>
 
 <script>
-let myFunction = (a,b) =>{
- let f= a * b
- document.write(f)
-}; 
-document.getElementById("demo").innerHTML = myFunction(4, 5);
+let myFunction =(a,b)=>a*b
+document.getElementById("demo").innerHTML=myFunction(2,3)
+ 
 
 
 
@@ -52,8 +35,8 @@ document.getElementById("demo").innerHTML = myFunction(4, 5);
 
 
 
-
-<!--  <script>
+<!-- 
+ <script>
 let sum = (a, b) =>{return a+b;}
 
 // let result1 = sum(5,7);
