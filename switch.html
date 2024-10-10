@@ -5,22 +5,52 @@
 </head>
 <body>
 	<script>  
-var grade='B';  
-var result;  
-switch(grade){  
-case 'A':  
-result="A Grade";  
-break;  
-case 'B':  
-result="B Grade";  
-break;  
-case 'C':  
-result="C Grade";  
-break;  
-default:  
-result="No Grade";  
-}  
-document.write(result);  
+
+
+
+var day = prompt("Please enter day:");
+let day1=parseInt(day)
+
+        // var day = 'sunday';
+        var result;
+
+        switch(day1) {
+            
+            case 1:
+                result = "sunday";
+                break;
+
+            case 2:
+                result = "monday";
+                break;
+
+            case 3:
+                result = "tuesday";
+                break;
+
+
+            default:
+                result = "not valid";
+                break;
+        }
+		document.write(result); 
+
+// var grade='B';  
+// var result;  
+// switch(grade){  
+// case 'A':  
+// result="A Grade";  
+// break;  
+// case 'B':  
+// result="B Grade";  
+// break;  
+// case 'C':  
+// result="C Grade";  
+// break;  
+// default:  
+// result="No Grade";  
+// }  
+// document.write(result);  
 </script> 
 
 </body>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacking Absolute Elements</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ 
+    <style>
+        .container {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(231, 231, 124);
+            position: relative;
+            border: 1px solid black;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute; 
+            
+        }
+        .box1 {
+            background-color: red;
+            top: 10px;
+            left: 10px;
+        }
+        .box2 {
+            background-color: green;
+            top: 50px;
+            left: 50px;
+        }
+        .box3 {
+            background-color: blue;
+            top: 90px;
+            left: 90px;
+        }
+        .side{
+            position: absolute; 
+            top: 250px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+ <div>
+    <div class="container">
+        <div id="bt1" class="box box1">1</div>
+        <div id="bt2" class="box box2">2</div>
+        <div id="bt3" class="box box3">3</div>
+
+
+        <button type="button" class="btn btn-warning side" onclick="demo()"> Success</button>
+    </div>
+
+
+    
+
+
+
+
+</div> 
+
+<!-- <script>
+node=document.getElementById("bt1")
+node1=document.getElementById("bt2")
+node2=document.getElementById("bt3")
+function demo(){
+    node.style.backgroundColor="yellow"
+    node1.style.backgroundColor="pink"
+    node2.style.backgroundColor="brown"
+}
+
+
+</script>  -->
+
+
+
+
+
+
+<!-- Write a function that finds the largest number in an array. -->
+
+<!-- <script>
+function findLargest(arr) {
+    let largest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] > largest) {
+        largest = arr[i];
+      }
+    }
+    return largest;
+  }
+  console.log(findLargest([10, 20, 30, 5, 15]));
+
+</script> -->
+
+
+
+<!-- Write a function that takes an array of numbers and returns the sum of all the numbers. -->
+
+<!-- <script>
+
+function sumArray(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+      sum += arr[i];
+    }
+    return sum;
+  }
+  console.log(sumArray([1, 2, 3, 4, 5]));
+
+
+</script> -->
+
+
+
+
+ <!-- Write a function to find the factorial of a given number. -->
+
+<!-- <script>
+
+function factorial(n) {
+  let result = 1;
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+console.log(factorial(5)); 
+
+
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 2 -->
+
+<!-- 
+<div>
+    <div class="container">
+        <div id="bt1" class="box box1">1</div>
+        <div id="bt2" class="box box2">2</div>
+        <div id="bt3" class="box box3">3</div>
+        <button type="button" class="btn btn-dark side" onclick="demo()">Success</button>
+    </div>
+</div>
+
+<script>
+    const colors = ["yellow", "pink", "green", "blue", "brown", "red"];
+    let colorIndex = 0; 
+
+    function demo() {
+        colorIndex++; 
+
+       
+        if (colorIndex >= colors.length) {
+            colorIndex = 0;
+        }
+     
+        document.getElementById("bt1").style.backgroundColor = colors[colorIndex];
+        document.getElementById("bt2").style.backgroundColor = colors[(colorIndex + 1) % colors.length];
+        document.getElementById("bt3").style.backgroundColor = colors[(colorIndex + 2) % colors.length];
+    } -->
+</script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

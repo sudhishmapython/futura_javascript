@@ -1,2 +1,2 @@
 
-document.write("calicut")
+document.write(" hello calicut")
