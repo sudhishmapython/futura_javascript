@@ -32,7 +32,7 @@
         var name=document.getElementById("name").value;  
         var password=document.getElementById("pass").value;   
           
-        if (name==null ||name==""){  
+        if (name==null || name==""){  
           // alert("Name can't be blank");  
           document.getElementById("namespan").innerHTML="please enter value"
           return false;  
@@ -45,17 +45,16 @@
 
 
         function clearmsg(sp){
-        document.getElementById(sp).innerHTML="";
-
-    }
+          document.getElementById(sp).innerHTML=""; 
+        }
 
         </script>  
          
         
 
-        <form name="myform" method="post" action="abc.html" onsubmit="return validateform1()">
-          <label> Name :</label>
-          <input type="text" id="name" onkeyup="clearmsg('namespan')"><br>
+        <form name="myform" method="" action="abc.html" onsubmit="return validateform1()">
+          <label> UserName :</label>
+          <input type="text" id="name" onkeyup="clearmsg('namespan')"> <br>
 
           <span id="namespan" style="color:red"></span>
           <br>

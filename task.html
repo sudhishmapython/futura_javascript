@@ -43,36 +43,35 @@
     </style>
 </head>
 <body>
- <div>
     <div class="container">
         <div id="bt1" class="box box1">1</div>
         <div id="bt2" class="box box2">2</div>
         <div id="bt3" class="box box3">3</div>
-
-
-        <button type="button" class="btn btn-warning side" onclick="demo()"> Success</button>
-    </div>
-
-
     
-
-
-
-
-</div> 
-
-<!-- <script>
-node=document.getElementById("bt1")
-node1=document.getElementById("bt2")
-node2=document.getElementById("bt3")
-function demo(){
-    node.style.backgroundColor="yellow"
-    node1.style.backgroundColor="pink"
-    node2.style.backgroundColor="brown"
-}
-
-
-</script>  -->
+        <button type="button" class="btn btn-warning side" onclick="changeColors()">Success</button>
+    </div>
+    
+    <script>
+    let node = document.getElementById("bt1");
+    let node1 = document.getElementById("bt2");
+    let node2 = document.getElementById("bt3");
+    
+    let toggle = false;
+    
+    function changeColors() {
+        if (toggle) {
+            node.style.backgroundColor = "yellow";
+            node1.style.backgroundColor = "pink";
+            node2.style.backgroundColor = "brown";
+        } else {
+            node.style.backgroundColor = "red";
+            node1.style.backgroundColor = "green";
+            node2.style.backgroundColor = "blue";
+        }
+        toggle = !toggle; 
+    }
+    </script>
+    
 
 
 

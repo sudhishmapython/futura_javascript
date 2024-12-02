@@ -2,6 +2,9 @@ let num1=28;
 let num2=10;
 let result=num1+num2;
 
+
+
+
 // console.log(`sum= ${result} bdbfbfbdfjvj hjhvjhvhjfhd ${result}
         
         
@@ -16,10 +19,32 @@ let result=num1+num2;
 
 
 
-            //  document.querySelector(".heading").innerHTML = `sum is ${result}`;
+
+
+
+
+
+
+      // document.querySelector(".heading").innerHTML = `sum is ${result}`;
+
+
+    //  let node=document.querySelectorAll('.heading');
+
+    //  for(let i=0;i<node.length;i++)
+    //  {
+    //   node[i].innerHTML=`sum is ${result}`
+    //  }
+
+
+
+
+
+
+
+
 
   
-  //    let heading2 = document.querySelectorAll('.heading');
+    // document.querySelectorAll('#heading').innerHTML="demo";
 
   // for (let i = 0; i < heading2.length; i++) {
   //   heading2[i].innerHTML = `Sum is ${result}`;
@@ -32,7 +57,8 @@ let result=num1+num2;
 
       //         heading1.style.color="red";
 
-      //      heading1.style.backgroundColor="blue"
+      //       heading1.style.backgroundColor="blue"
+            
 
 
   //  let styleObject = {color: 'red', "background-color" : 'yellow'};
@@ -46,7 +72,7 @@ let result=num1+num2;
 // }
 
 
-        //    document.querySelector(".example").style.backgroundColor = "red";
+              // document.querySelector(".example").style.backgroundColor = "red";
 
 
 

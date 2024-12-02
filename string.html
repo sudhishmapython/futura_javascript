@@ -6,7 +6,8 @@
 <body>
 	 <script>  
 var str="This is string";  
-document.write(str);  
+document.write(str); 
+// console.log(typeof str) 
 </script>  
 
 </body>
@@ -26,10 +27,10 @@ document.getElementById("demo").innerHTML = str.charAt(1);  //javascript string 
 </script>  
 
 </body>
-</html>
- -->
+</html> -->
 
-  <!-- <!DOCTYPE html>
+<!-- 
+  <!DOCTYPE html>
  <html>
 <head>
 	<title>STRING</title>
@@ -40,7 +41,7 @@ document.getElementById("demo").innerHTML = str.charAt(1);  //javascript string 
 var s1="Hello";  
 var s2="World";  
 var s3=s1.concat(s2);  
-// console.log(s3);
+ console.log(s3);
 document.getElementById("demo").innerHTML=s3 
  
  
@@ -75,6 +76,7 @@ document.write(s1);
 	<title>STRING</title>
 </head>
 <body>
+	<p id="demo"></p>
 	<script>  
 // var s1="JavaScript"; //javascript string uppercase 
 //  var s2=s1.toUpperCase();  
@@ -86,6 +88,9 @@ var   b = A.slice(0,6);
 var  c = A.slice(6,9); // slicing
 var  d = A.slice(10); 
 	document.write(b)
+	let text = "Apple, Banana, Kiwi";
+let data = text.slice(-10,-5)
+document.getElementById("demo").innerHTML = data;
 </script>  
 
 -->
