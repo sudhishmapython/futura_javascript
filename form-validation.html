@@ -30,6 +30,7 @@
 
         function validateform1(){  
         var name=document.getElementById("name").value;  
+     
         var password=document.getElementById("pass").value;   
           
         if (name==null || name==""){  
@@ -41,7 +42,7 @@
           document.getElementById("passspan").innerHTML="Password must be at least 6 characters long."
           return false;  
           }   
-        }  
+        }   
 
 
         function clearmsg(sp){
@@ -52,7 +53,7 @@
          
         
 
-        <form name="myform" method="" action="abc.html" onsubmit="return validateform1()">
+        <form name="myform" method="" action="patterns.html" onsubmit="return validateform1()">
           <label> UserName :</label>
           <input type="text" id="name" onkeyup="clearmsg('namespan')"> <br>
 

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Volvo Cars India | Landing Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      
+	  /* Hero Section Style */
+/* Hero Section Style */
+.volvo-hero {
+  height: 80vh;
+  background: url("https://images.unsplash.com/photo-1617361751104-16a3b1fc4f84?q=80&w=1600&auto=format&fit=crop")
+    center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Animated Overlay Div */
+.overlay-animate {
+  position: absolute;
+  top: -100%; /* start above the hero */
+  left: 0;
+  width: 100%;
+  height: 100px; /* overlay height */
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideOverlay 1.2s ease forwards;
+}
+
+/* Slide Overlay Animation (top to bottom) */
+@keyframes slideOverlay {
+  0% {
+    top: -100%;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* Text Styling inside overlay */
+.overlay-animate h1,
+.overlay-animate p,
+.overlay-animate a {
+  color: #fff;
+}
+.overlay-animate h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.overlay-animate p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+
+    </style>
+  </head>
+
+  <body>
+   
+<!-- Hero Section -->
+<section class="volvo-hero position-relative text-white d-flex justify-content-center align-items-start">
+  <div class="overlay-animate">
+    <div class="container text-center position-relative z-index-1 py-5">
+    <p>Lorem ipsum dolor sit amet.</p> 
+	</div>
+  </div>
+</section>
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero text-start">
+      <div class="container">
+        <div class="col-md-6">
+          <h1>Drive the Future with Volvo</h1>
+          <p>
+            Experience innovation, safety, and luxury with our new range of
+            electric and hybrid vehicles.
+          </p>
+          <a href="#models" class="btn btn-primary me-2">Explore Models</a>
+          <a href="#contact" class="btn btn-outline-light">Book Test Drive</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?q=80&w=600"
+               class="img-fluid"
+              alt="Volvo car"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2>About Volvo Cars</h2>
+            <p>
+              Volvo Cars is known for world-class safety, Scandinavian design,
+              and commitment to sustainability. Our mission is to provide
+              freedom to move in a personal, sustainable, and safe way.
+            </p>
+            <p>
+              We continue to lead the way in electric and hybrid technology,
+              ensuring every journey is both luxurious and eco-friendly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models" class="models py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="mb-4">Our Popular Models</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?q=80&w=600"
+              alt="XC40"
+            />
+            <h5 class="mt-2">Volvo XC40 Recharge</h5>
+            <p>Compact SUV with modern design and full electric power.</p>
+          </div>
+          <div class="col-md-4">
+            <img
+             src="https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?q=80&w=600"
+               alt="XC60"
+            />
+            <h5 class="mt-2">Volvo XC60</h5>
+            <p>Dynamic luxury SUV blending performance with comfort.</p>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?q=80&w=600"
+              alt="XC90"
+            />
+            <h5 class="mt-2">Volvo XC90</h5>
+            <p>Premium SUV offering space, elegance, and advanced safety.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Why Choose Volvo?</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="feature-box text-center">
+              <h5>Safety Innovation</h5>
+              <p>
+                Volvo leads the world in car safety with cutting-edge systems
+                protecting you and your loved ones.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-box text-center">
+              <h5>Electric Future</h5>
+              <p>
+                With our electric range, we’re committed to a cleaner,
+                sustainable future for mobility.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-box text-center">
+              <h5>Elegant Design</h5>
+              <p>
+                Scandinavian minimalism meets modern luxury — every Volvo is
+                crafted with precision and beauty.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="text-center mb-4">Get in Touch</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="Your name" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="your@email.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Type your message..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Volvo Cars India | Designed for Practice Use Only</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

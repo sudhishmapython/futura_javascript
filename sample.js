@@ -1,2 +1,2 @@
-document.write("js file");
-alert("this is alert");
+console.log("external file");
+

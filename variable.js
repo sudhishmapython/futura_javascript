@@ -1,7 +1,9 @@
-let num1=28;
-let num2=10;
-let result=num1+num2;
+console.log("hello console");
 
+
+// let num1=28;
+// let num2=10;
+// let result=num1+num2;
 
 
 
@@ -21,7 +23,7 @@ let result=num1+num2;
 
 
 
-
+  //  document.querySelector(".heading").innerHTML="demo data";
 
 
 
@@ -32,11 +34,11 @@ let result=num1+num2;
 
     //  for(let i=0;i<node.length;i++)
     //  {
-    //   node[i].innerHTML=`sum is ${result}`
+    //   node[i].innerHTML="demo data";
     //  }
 
 
-
+   
 
 
 
@@ -44,7 +46,7 @@ let result=num1+num2;
 
 
   
-    // document.querySelectorAll('#heading').innerHTML="demo";
+    //  document.querySelector('#heading').innerHTML="demo";
 
   // for (let i = 0; i < heading2.length; i++) {
   //   heading2[i].innerHTML = `Sum is ${result}`;
@@ -54,6 +56,7 @@ let result=num1+num2;
         
       //  let heading1=document.querySelector(".heading");
       //  heading1.innerHTML=`sum is ${result}`;
+
 
       //         heading1.style.color="red";
 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Element Object</h1>
+<h2>The Differences Between innerText, innerHTML and textContent</h2>
+
+<p id="P1">     The front end is a combination of     <b>futura</b> two different elements <span>the graphic design (the look) and the user interface (the feel).</span>.</p>
+
+
+
+
+
+<button onclick="getinnerHTML()">Get innerHTML</button>
+<button onclick="getinnerText()">Get innerText</button>
+<button onclick="gettextContent()">Get textContent</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function getinnerText() {
+  let text = document.getElementById("P1").innerText;
+  document.getElementById("demo").innerHTML = text;
+}
+
+function getinnerHTML() {
+  let text = document.getElementById("P1").innerHTML;
+  document.getElementById("demo1").innerText = text;
+}
+
+function gettextContent() {
+  let text = document.getElementById("P1").textContent;
+  document.getElementById("demo2").textContent = text;
+}
+</script>
+
+</body>
+</html>

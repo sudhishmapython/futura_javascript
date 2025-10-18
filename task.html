@@ -43,7 +43,24 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <button onclick="incrementCount()">Click Me</button>
+    <p id="clickCount">Click count: 0</p>
+    
+    <script>
+      var count = 0;
+    
+      function incrementCount() {
+        count++;
+        document.getElementById('clickCount').innerHTML = 'Click count: ' + count;
+      }
+    </script>
+    
+
+
+
+
+
+    <!-- <div class="container">
         <div id="bt1" class="box box1">1</div>
         <div id="bt2" class="box box2">2</div>
         <div id="bt3" class="box box3">3</div>
@@ -70,7 +87,7 @@
         }
         toggle = !toggle; 
     }
-    </script>
+    </script> -->
     
 
 
@@ -117,7 +134,7 @@ function sumArray(arr) {
 
  <!-- Write a function to find the factorial of a given number. -->
 
-<!-- <script>
+<script>
 
 function factorial(n) {
   let result = 1;
@@ -129,7 +146,7 @@ function factorial(n) {
 console.log(factorial(5)); 
 
 
-</script> -->
+</script>
 
 
 
@@ -140,10 +157,20 @@ console.log(factorial(5));
 
 
 
+<!-- Create a web page with a textarea and a counter that shows how many characters the user has typed. -->
 
 
+<!-- <body>
+  <textarea id="message" onkeyup="countChars()" rows="5" cols="30"></textarea>
+  <p>Characters: <span id="count">0</span></p>
 
-
+  <script>
+    function countChars() {
+      let text = document.getElementById("message").value;
+      document.getElementById("count").innerText = text.length;
+    }
+  </script>
+</body> -->
 
 
 
